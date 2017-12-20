@@ -1,0 +1,17 @@
+- defaults:
+    link:
+        relink: true
+        create: true
+
+- link:
+    ~/.zshrc: zsh/zshrc
+    ~/.zshenv: zsh/env  
+    ~/.aliases: zsh/aliases
+    ~/.zsh/functions: zsh/functions
+    ~/.zsh/plugins: zsh/plugins
+    ~/.zsh/prompt.zsh: zsh/prompt.zsh
+
+- shell:
+   - [git submodule update --init --recursive, Installing submodules]
+   - [chmod g-w ~/.zsh/functions, Fix zsh permissions]
+   - [chmod 600 ~/.ssh/config, Fix ssh config perms]
