@@ -23,10 +23,10 @@ nnoremap j gj
 nnoremap k gk
 
 " set the runtime path to include Vundle and initialization
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'faith/vim-go'
-call vundle#end()
+"set rtp+=~/.vim/bundle/Vundle.vim
+call plug#begin()
+Plug 'fatih/vim-go'
+call plug#end()
 filetype plugin indent on
 
 " Settings for golang

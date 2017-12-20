@@ -11,7 +11,15 @@
     ~/.zsh/plugins: zsh/plugins
     ~/.zsh/prompt.zsh: zsh/prompt.zsh
 
+    ~/.vim/colors: vim/colors
+    ~/.vim/autoload: vim/autoload
+
 - shell:
    - [git submodule update --init --recursive, Installing submodules]
    - [chmod g-w ~/.zsh/functions, Fix zsh permissions]
    - [chmod 600 ~/.ssh/config, Fix ssh config perms]
+
+   # install vim plugins
+   # [vim +PlugInstall +qall, install vim plugins]
+   # update them as well, since install does not perform update
+   # [vim +PlugUpdate +qall, update vim plugins]
