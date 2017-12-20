@@ -20,6 +20,13 @@
    - [chmod 600 ~/.ssh/config, Fix ssh config perms]
 
    # install vim plugins
-   # [vim +PlugInstall +qall, install vim plugins]
-   # update them as well, since install does not perform update
-   # [vim +PlugUpdate +qall, update vim plugins]
+   - 
+     command: vim +PlugInstall +qall
+     description: install vim plugins
+     stdout: true
+     stdin: true
+   - 
+     command: vim +PlugUpdate +qall
+     description: Update vim plugins
+     stdout: true
+     stdin: true
