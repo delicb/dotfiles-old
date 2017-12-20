@@ -1,7 +1,6 @@
 alias ls='exa'
 alias l='exa -lb --git --color-scale'
 alias la='l -a'
-alias g='git'
 
 alias -g ..='cd ..'
 alias -g ...='cd ../..'
@@ -11,6 +10,7 @@ alias servethis='python -m http.server 9000'
 alias du='du -sh'
 alias df='df -h'
 
+alias g='git'
 alias ga='git add'
 alias gd='git diff'
 alias gf='git fetch'
