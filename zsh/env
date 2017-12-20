@@ -1,0 +1,22 @@
+export EDITOR='vim'
+export PAGER='less'
+
+
+export PATH="/usr/local/bin:$PATH"
+
+# not required since go 1.9, since it is default, but keep it anyway
+export GOPATH="$HOME/go"
+export GOROOT="$(go env GOROOT)"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+export PATH="$HOME/bin:$GOPATH/bin:$PATH"
+
+if [[ "$OSTYPE" == darwin* ]]; then
+    export BROWSER='open'
+fi
+
+export LANG='en_US.UTF-8'
+export LC_ALL='en_US.UTF-8'
+

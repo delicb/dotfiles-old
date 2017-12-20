@@ -1,0 +1,6 @@
+Host delic.rs
+  Port 22202
+Host *
+  ServerAliveInterval 1800
+  ServerAliveCountMax 30
+  UseKeychain yes

@@ -1,0 +1,28 @@
+alias l='exa -lb --git --color-scale'
+alias la='l -a'
+alias g='git'
+
+alias -g ..='cd ..'
+alias -g ...='cd ../..'
+alias -g ....='cd ../../..'
+
+alias servethis='python -m http.server 9000'
+alias du='du -sh'
+alias df='df -h'
+
+alias ga='git add'
+alias gd='git diff'
+alias gf='git fetch'
+alias gp='git pull'
+alias gc='git commit'
+alias gss='git status'
+alias git_sbg="git config user.email 'bojan.delic@sbgenomics.com' && git config user.name 'Bojan Delić'"
+alias git_personal="git config user.email 'bojan@delic.rs' && git config user.name 'Bojan Delić'"
+
+alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
+
+alias reload='source ~/.zshrc'
+alias nb='jupyter notebook'
+
+alias godeps="go list -f '{{join .Deps \"\n\"}}' |  xargs go list -f '{{if not .Standard}}{{.ImportPath}}{{end}}'"
+
