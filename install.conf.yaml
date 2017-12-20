@@ -4,6 +4,7 @@
         create: true
 
 - link:
+    # zsh related stuff
     ~/.zshrc: zsh/zshrc
     ~/.zshenv: zsh/env  
     ~/.aliases: zsh/aliases
@@ -11,13 +12,19 @@
     ~/.zsh/plugins: zsh/plugins
     ~/.zsh/prompt.zsh: zsh/prompt.zsh
 
+    # vim configuration
     ~/.vim/colors: vim/colors
     ~/.vim/autoload: vim/autoload
+
+    # VS code
+    ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
+    ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
+    ~/Library/Application Support/Code/User/snippets: vscode/snippets
 
 - go:
     - 
       package: github.com/svent/sift
-      flags: [-v, -u]
+      flags: [-v]
       stdout: true
       stderr: true
 
@@ -39,3 +46,10 @@
      description: Update vim plugins
      stdout: true
      stdin: true
+
+   # install vscode extensions
+   -
+     command: cat vscode/EXTENSIONS | while read in; do code --install-extension "$in"; done
+     description: Install vscode extensions
+     stdout: true
+     stderr: true

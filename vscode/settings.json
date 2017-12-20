@@ -1,0 +1,149 @@
+// Place your settings in this file to overwrite the default settings
+{
+	// global editor settings
+	// "editor.fontFamily": "Input mono",
+	"editor.fontFamily": "Source Code Pro",
+	"editor.fontSize": 13,
+	"editor.fontLigatures": true,
+	"editor.lineHeight": 18,
+	"editor.rulers": [
+		80,
+		120
+	],
+	"editor.insertSpaces": false,
+	"editor.renderWhitespace": "boundary",
+	"editor.renderIndentGuides": true,
+	"editor.emptySelectionClipboard": false,
+	"editor.cursorBlinking": "phase",
+	"editor.minimap.enabled": false,
+	
+	"workbench.activityBar.visible": true,
+	"workbench.sideBar.location": "left",
+	"workbench.iconTheme": "vs-nomo-dark",
+	"workbench.statusBar.visible": true,
+
+	"files.autoSave": "off",
+	"window.zoomLevel": 0,
+	"gitlens.codeLens.enabled": false,
+	"vsicons.dontShowNewVersionMessage": false,
+
+
+	// terminal rules
+	"terminal.external.osxExec": "iterm.app",
+	"terminal.integrated.fontFamily": "Input mono",
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.scrollback": 10000,
+
+
+	// python rules
+	// this will use default python path selected as default by pyenv
+	"python.pythonPath": "/Users/del-boy/.pyenv/shims/python",
+	// vscode can suggest which env to use after inspecting following folder
+	"python.venvPath": "/Users/del-boy/venvs",
+
+	"python.linting.prospectorEnabled": false,
+	"python.linting.prospectorArgs": [
+		"-s",
+		"medium"
+	],
+	"python.linting.pylintEnabled": true,
+	"python.linting.pep8Enabled": true,
+	"python.linting.pep8Args": ["--ignore", "E402", "--max-line-length", "120"],
+	"python.linting.prospectorPath": "/Users/del-boy/.pyenv/shims/prospector",
+	"python.formatting.provider": "yapf",
+	"python.formatting.yapfArgs": ["--style", "pep8", "-p"],
+	"python.formatting.autopep8Args": ["--aggressive"],
+	"python.linting.outputWindow": "Python",
+
+	"python.unitTest.pyTestEnabled": true,
+
+	"[python]":{
+		"editor.insertSpaces": true,
+		"editor.rulers": [
+			80
+		]
+	},
+
+
+	// golang settings
+	"go.useLanguageServer": false,
+	"go.formatTool": "goimports",
+	"go.formatFlags": [],
+	"go.formatOnSave": true,
+	"go.liveErrors": {
+		"enabled": true,
+		"delay": 500
+	},
+	"go.editorContextMenuCommands": {
+		"toggleTestFile": false,
+		"addTags": false,
+		"removeTags": false,
+		"testAtCursor": false,
+		"testFile": false,
+		"testPackage": false,
+		"generateTestForFunction": false,
+		"generateTestForFile": false,
+		"generateTestForPackage": false,
+		"addImport": false,
+		"testCoverage": false
+	},
+	
+	"go.lintTool": "megacheck",
+	"go.testOnSave": true,
+	"go.coverOnSave": true,
+	"go.coverageDecorator": "gutter",
+	"go.useCodeSnippetsOnFunctionSuggest": false,
+	"go.autocompleteUnimportedPackages": true,
+	"go.gotoSymbol.includeImports": true,
+	"go.addTags": {
+		"tags": "json",
+		"options": "json=omitempty",
+		"promptForTags": true,
+		"transform": "snakecase"
+	},
+	"[go]": {
+		"editor.rulers": [
+			80,
+			120
+		]
+	},
+	
+	// spelling 
+	"cSpell.userWords": [
+		"TOTP",
+		"andygrunwald",
+		"bojan",
+		"cliware",
+		"dbname",
+		"delic",
+		"delicb",
+		"dupaso",
+		"fixso",
+		"gitlens",
+		"golang",
+		"gopkg",
+		"iterm",
+		"jira",
+		"ligno",
+		"middlewares",
+		"postgres",
+		"pressly",
+		"querystring",
+		"rdebug",
+		"responsebody",
+		"sbgenomics",
+		"scrollback",
+		"sevenbridges",
+		"struct",
+		"structs",
+		"twillio",
+		"vsicons"
+	],
+
+	// do not send stuff to anyone (e.g microsoft)
+	"telemetry.enableTelemetry": false,
+	"telemetry.enableCrashReporter": false,
+	"rest-client.enableTelemetry": false,
+	"code-runner.enableAppInsights": false,
+	"gitlens.advanced.telemetry.enabled": false
+}
