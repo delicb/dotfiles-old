@@ -11,6 +11,7 @@ set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
+
 syntax on
 colorscheme tomorrownight
 set nocompatible "be iMproved
@@ -21,3 +22,23 @@ set backspace=2
 nnoremap j gj
 nnoremap k gk
 
+" set the runtime path to include Vundle and initialization
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'faith/vim-go'
+call vundle#end()
+filetype plugin indent on
+
+" Settings for golang
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+let g:go_fmt_command = "goimports"
+
+set completeopt+=preview
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
