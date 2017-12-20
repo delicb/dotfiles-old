@@ -13,6 +13,7 @@
     ~/.zsh/prompt.zsh: zsh/prompt.zsh
 
     # vim configuration
+    ~/.vimrc: vim/vimrc
     ~/.vim/colors: vim/colors
     ~/.vim/autoload: vim/autoload
 
