@@ -12,6 +12,10 @@ set hlsearch            " highlight matches
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
 
+" do not store swp and backup files in same dir
+set directory=~/.vim-swp
+set backupdir=~/.vim-backup
+
 syntax on
 colorscheme tomorrownight
 set nocompatible "be iMproved

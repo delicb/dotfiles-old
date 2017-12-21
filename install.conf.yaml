@@ -37,6 +37,8 @@
    - [git submodule update --init --recursive, Installing submodules]
    - [chmod g-w ~/.zsh/functions, Fix zsh permissions]
    - [chmod 600 ~/.ssh/config, Fix ssh config perms]
+   - [mkdir -p ~/.vim-swp, Create vim swap dir]
+   - [mkdir -p ~/.vim-backup, Create vim backup dir]
 
    # install vim plugins
    - 
