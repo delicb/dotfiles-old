@@ -9,7 +9,7 @@ export GOPATH="$HOME/go"
 export GOROOT="$(go env GOROOT)"
 
 export PYENV_ROOT="$HOME/.pyenv"
-export JAVA_HOME=$(/usr/libexec/java_home)
+[[ -f /usr/libexec/java_home ]] && export JAVA_HOME=$(/usr/libexec/java_home)
 
 export PATH="$HOME/bin:$GOPATH/bin:$PATH"
 
