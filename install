@@ -2,11 +2,27 @@
 
 set -e
 
-CONFIG="install.conf.yaml"
+case "$(uname -s)" in 
+    Linux*) CONFIG="install-linux.conf.yaml";;
+    Darwin*) CONFIG="install-osx.conf.yaml";;
+    *) CONFIG=""
+esac
+
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+
+CONFIG="install-$(uname -s).conf.yaml"
+CONFIG=${CONFIG,,}
+echo $CONFIG
+if [ ! -f ${CONFIG} ]; then
+    echo "Unsupported operating system ($(uname -s)), no config file: ${CONFIG}"
+    echo "Exiting"
+    exit 1
+fi
+
 
 cd "${BASEDIR}"
 git submodule update --init --recursive "${DOTBOT_DIR}"
