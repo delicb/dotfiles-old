@@ -94,4 +94,3 @@ setopt CORRECT
 setopt NO_BEEP
 
 eval "$(pyenv init -)"
-eval "$(direnv hook zsh)"
