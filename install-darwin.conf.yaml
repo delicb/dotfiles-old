@@ -59,8 +59,8 @@
     stdout: true
     stderr: true
 
-  -
-    command: for i in osx/*; do bash "$i"; done
-    description: Initialize all OSX specific config
-    stdout: true
-    stderr: true
+    #  -
+    #command: for i in osx/*; do bash "$i"; done
+    #description: Initialize all OSX specific config
+    #stdout: true
+    #stderr: true
