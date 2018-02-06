@@ -1,0 +1,49 @@
+- defaults:
+    link:
+        relink: true
+        create: true
+
+- link:
+    # zsh related stuff
+    ~/.zshrc: zsh/zshrc
+    ~/.zshenv: zsh/env  
+    ~/.aliases: zsh/aliases
+    ~/.zsh/functions: zsh/functions
+    ~/.zsh/plugins: zsh/plugins
+    ~/.zsh/prompt.zsh: zsh/prompt.zsh
+
+    # vim configuration
+    ~/.vimrc: vim/vimrc
+    ~/.vim/colors: vim/colors
+    ~/.vim/autoload: vim/autoload
+
+    # git
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore_global: git/gitignore_global
+
+- go:
+    - 
+      package: github.com/svent/sift
+      flags: [-v]
+      stdout: true
+      stderr: true
+
+- shell:
+   - [git submodule update --init --recursive, Installing submodules]
+   - [chmod g-w ~/.zsh/functions, Fix zsh permissions]
+   - [chmod 600 ~/.ssh/config, Fix ssh config perms]
+   - [mkdir -p ~/.vim-swp, Create vim swap dir]
+   - [mkdir -p ~/.vim-backup, Create vim backup dir]
+
+   # install vim plugins
+   - 
+     command: vim +PlugInstall +qall
+     description: install vim plugins
+     stdout: true
+     stdin: true
+   - 
+     command: vim +PlugUpdate +qall
+     description: Update vim plugins
+     stdout: true
+     stdin: true
+
