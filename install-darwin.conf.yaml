@@ -21,6 +21,9 @@
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
 
+    # ssh config
+    ~/.ssh/config: ssh/darwin/config
+
     # VS code
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
