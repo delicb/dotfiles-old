@@ -2,7 +2,7 @@ alias ls='exa'
 alias l='exa -lb --git --color-scale'
 alias la='l -a'
 
-alias -g ..='cd ..'
+alias ..='cd ..'
 alias -g ...='cd ../..'
 alias -g ....='cd ../../..'
 
