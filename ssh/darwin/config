@@ -1,6 +1,8 @@
 Host delic.rs
   Port 22202
+Host home.delic.rs
+  POrt 22202
 Host *
-  ServerAliveInterval 1800
+  ServerAliveInterval 240
   ServerAliveCountMax 30
   UseKeychain yes

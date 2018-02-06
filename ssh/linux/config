@@ -1,0 +1,8 @@
+Host delic.rs
+  Port 22202
+Host home.delic.rs
+  POrt 22202
+Host *
+  ServerAliveInterval 240
+  ServerAliveCountMax 30
+

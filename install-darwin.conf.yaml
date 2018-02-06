@@ -22,7 +22,7 @@
     ~/.gitignore_global: git/gitignore_global
 
     # ssh config
-    ~/.ssh/config: ssh/config
+    ~/.ssh/config: ssh/darwin/config
 
     # VS code
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
@@ -30,34 +30,40 @@
     ~/Library/Application Support/Code/User/snippets: vscode/snippets
 
 - go:
-    - 
-      package: github.com/svent/sift
-      flags: [-v]
-      stdout: true
-      stderr: true
+  - 
+    package: github.com/svent/sift
+    flags: [-v]
+    stdout: true
+    stderr: true
 
 - shell:
-   - [git submodule update --init --recursive, Installing submodules]
-   - [chmod g-w ~/.zsh/functions, Fix zsh permissions]
-   - [chmod 600 ~/.ssh/config, Fix ssh config perms]
-   - [mkdir -p ~/.vim-swp, Create vim swap dir]
-   - [mkdir -p ~/.vim-backup, Create vim backup dir]
+  - [git submodule update --init --recursive, Installing submodules]
+  - [chmod g-w ~/.zsh/functions, Fix zsh permissions]
+  - [chmod 600 ~/.ssh/config, Fix ssh config perms]
+  - [mkdir -p ~/.vim-swp, Create vim swap dir]
+  - [mkdir -p ~/.vim-backup, Create vim backup dir]
 
-   # install vim plugins
-   - 
-     command: vim +PlugInstall +qall
-     description: install vim plugins
-     stdout: true
-     stdin: true
-   - 
-     command: vim +PlugUpdate +qall
-     description: Update vim plugins
-     stdout: true
-     stdin: true
+  # install vim plugins
+  - 
+    command: vim +PlugInstall +qall
+    description: install vim plugins
+    stdout: true
+    stdin: true
+  - 
+    command: vim +PlugUpdate +qall
+    description: Update vim plugins
+    stdout: true
+    stdin: true
 
-   # install vscode extensions
-   -
-     command: cat vscode/EXTENSIONS | while read in; do code --install-extension "$in"; done
-     description: Install vscode extensions
-     stdout: true
-     stderr: true
+  # install vscode extensions
+  -
+    command: cat vscode/EXTENSIONS | while read in; do code --install-extension "$in"; done
+    description: Install vscode extensions
+    stdout: true
+    stderr: true
+
+    #  -
+    #command: for i in osx/*; do bash "$i"; done
+    #description: Initialize all OSX specific config
+    #stdout: true
+    #stderr: true

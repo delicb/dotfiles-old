@@ -17,6 +17,9 @@
     ~/.vim/colors: vim/colors
     ~/.vim/autoload: vim/autoload
 
+    # ssh config
+    ~/.ssh/config: ssh/linux/config
+
     # git
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
