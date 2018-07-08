@@ -24,7 +24,6 @@
 
 	"files.autoSave": "off",
 	"window.zoomLevel": 0,
-	"gitlens.codeLens.enabled": false,
 	"vsicons.dontShowNewVersionMessage": false,
 
 
@@ -53,7 +52,6 @@
 	"python.formatting.provider": "yapf",
 	"python.formatting.yapfArgs": ["--style", "pep8", "-p"],
 	"python.formatting.autopep8Args": ["--aggressive"],
-	"python.linting.outputWindow": "Python",
 
 	"python.unitTest.pyTestEnabled": true,
 
@@ -61,7 +59,8 @@
 		"editor.insertSpaces": true,
 		"editor.rulers": [
 			80
-		]
+		],
+		"files.trimTrailingWhitespace": true
 	},
 
 
@@ -69,7 +68,6 @@
 	"go.useLanguageServer": false,
 	"go.formatTool": "goimports",
 	"go.formatFlags": [],
-	"go.formatOnSave": true,
 	"go.liveErrors": {
 		"enabled": true,
 		"delay": 500
@@ -91,7 +89,9 @@
 	"go.lintTool": "megacheck",
 	"go.testOnSave": true,
 	"go.coverOnSave": true,
-	"go.coverageDecorator": "gutter",
+	"go.coverageDecorator": {
+		"type": "gutter"
+	},
 	"go.useCodeSnippetsOnFunctionSuggest": false,
 	"go.autocompleteUnimportedPackages": true,
 	"go.gotoSymbol.includeImports": true,
@@ -105,7 +105,8 @@
 		"editor.rulers": [
 			80,
 			120
-		]
+		],
+		"editor.formatOnSave": true,
 	},
 	
 	// spelling 
@@ -130,6 +131,8 @@
 		"pressly",
 		"querystring",
 		"rdebug",
+		"repo",
+		"resenje",
 		"responsebody",
 		"sbgenomics",
 		"scrollback",
@@ -145,5 +148,21 @@
 	"telemetry.enableCrashReporter": false,
 	"rest-client.enableTelemetry": false,
 	"code-runner.enableAppInsights": false,
-	"gitlens.advanced.telemetry.enabled": false
+	"gitlens.advanced.telemetry.enabled": false,
+	"gitlens.gitExplorer.files.layout": "tree",
+	"gitlens.keymap": "chorded",
+	"gitlens.advanced.messages": {
+		"suppressCommitHasNoPreviousCommitWarning": false,
+		"suppressCommitNotFoundWarning": false,
+		"suppressFileNotUnderSourceControlWarning": false,
+		"suppressGitVersionWarning": false,
+		"suppressLineUncommittedWarning": false,
+		"suppressNoRepositoryWarning": false,
+		"suppressResultsExplorerNotice": false,
+		"suppressShowKeyBindingsNotice": true
+	},
+	"vsicons.projectDetection.disableDetect": true,
+	"gitlens.historyExplorer.enabled": true,
+	"gitlens.settings.mode": "advanced",
+	"gitlens.codeLens.enabled": false
 }

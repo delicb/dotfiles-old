@@ -1,15 +1,14 @@
 [user]
     useConfigOnly = true
-	name = Bojan Delic
-	email = bojan@delic.in.rs
 [core]
+    #editor = code --wait
     editor = vim
-	excludesfile = /Users/del-boy/.gitignore_global
+    excludesfile = /Users/del-boy/.gitignore_global
 [push]
     default = simple
 [alias]
     tree = log --graph --decorate --pretty=oneline --abbrev-commit
-    stat = status
+    s= status --short --branch --ignore-submodules=untracked
     lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim yellow)- [%an]%C(reset)%C(bold yellow)%d%C(reset)' --all
     lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n'' %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
     lg = !"git lg1"
@@ -23,6 +22,16 @@
     dc = diff --cached
     unstage = reset HEAD --
     change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f "
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+# [difftool "sourcetree"]
+#     cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+#     path = 
+# [mergetool "sourcetree"]
+#     cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+#     trustExitCode = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
