@@ -17,7 +17,7 @@ alias gf='git fetch'
 alias gp='git pull'
 alias gc='git commit'
 alias gss='git s'
-alias git_sbg="git config user.email 'bojan.delic@sbgenomics.com' && git config user.name 'Bojan Delić'"
+alias git_sbg="git config user.email 'bojan.delic@sbgenomics.com' && git config user.name 'Bojan Delić && git config user.signingkey 0x4FA8F3D297880683 && git config commit.gpgsign true'"
 alias git_personal="git config user.email 'bojan@delic.rs' && git config user.name 'Bojan Delić'"
 
 alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
