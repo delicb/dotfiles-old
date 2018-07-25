@@ -27,6 +27,11 @@
     # ssh config
     ~/.ssh/config: ssh/config
 
+    # gpg config
+    ~/.gnupg/gpg.cong: gnupg/gpg.conf
+    ~/.gnupg/gpg-agent.cong: gnupg/gpg-agent.conf
+    ~/.gnupg/dirmngr.conf: gnupg/dirmngr.conf
+
 - go:
     - 
       package: github.com/svent/sift

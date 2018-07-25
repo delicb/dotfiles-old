@@ -24,6 +24,11 @@
     # ssh config
     ~/.ssh/config: ssh/darwin/config
 
+    # gpg
+    ~/.gnupg/gpg.conf: gnupg/gpg.conf
+    ~/.gnupg/gpg-agent.conf: gnupg/gpg-agent.conf
+    ~/.gnupg/dirmngr.conf: gnupg/dirmngr.conf
+
     # VS code
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
