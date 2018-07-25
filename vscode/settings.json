@@ -115,6 +115,7 @@
 		"andygrunwald",
 		"bojan",
 		"cliware",
+		"cookiecutter",
 		"dbname",
 		"delic",
 		"delicb",
@@ -162,7 +163,6 @@
 		"suppressShowKeyBindingsNotice": true
 	},
 	"vsicons.projectDetection.disableDetect": true,
-	"gitlens.historyExplorer.enabled": true,
 	"gitlens.settings.mode": "advanced",
 	"gitlens.codeLens.enabled": false
 }
