@@ -15,7 +15,7 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 
 CONFIG="install-$(uname -s).conf.yaml"
-CONFIG=${CONFIG,,}
+#CONFIG=${CONFIG,,}
 echo $CONFIG
 if [ ! -f ${CONFIG} ]; then
     echo "Unsupported operating system ($(uname -s)), no config file: ${CONFIG}"
