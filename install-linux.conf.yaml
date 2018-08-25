@@ -32,6 +32,10 @@
     ~/.gnupg/gpg-agent.cong: gnupg/gpg-agent.conf
     ~/.gnupg/dirmngr.conf: gnupg/dirmngr.conf
 
+    # scripts
+    ~/bin/git-personal: bin/git-personal
+    ~/bin/git-sbg: bin/git-sbg
+
 - go:
     - 
       package: github.com/svent/sift

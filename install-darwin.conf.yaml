@@ -34,6 +34,10 @@
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
     ~/Library/Application Support/Code/User/snippets: vscode/snippets
 
+    # scripts
+    ~/bin/git-personal: bin/git-personal
+    ~/bin/git-sbg: bin/git-sbg
+
 - go:
   - 
     package: github.com/svent/sift
