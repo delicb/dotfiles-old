@@ -164,5 +164,6 @@
 	},
 	"vsicons.projectDetection.disableDetect": true,
 	"gitlens.settings.mode": "advanced",
-	"gitlens.codeLens.enabled": false
+	"gitlens.codeLens.enabled": false,
+	"breadcrumbs.enabled": true
 }
