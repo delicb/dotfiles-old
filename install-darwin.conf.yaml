@@ -38,6 +38,54 @@
     ~/bin/git-personal: bin/git-personal
     ~/bin/git-sbg: bin/git-sbg
 
+- tap:
+  - homebrew/cask
+  - homebrew/cask-drivers
+  - homebrew/core
+  - homebrew/services
+  - homebrew/bundle
+
+- brew:
+  - cookiecutter
+  - coreutils
+  - curl --with-nghttp2
+  - exa
+  - git
+  - git-extras
+  - gnutls
+  - go
+  - graphviz
+  - htop
+  - jq
+  - maven
+  - mercurial
+  - pinentry-mac
+  - pyenv
+  - restic
+  - shellcheck
+  - ssh-copy-id
+  - telnet
+  - tig
+  - tmux
+  - vim
+  - wget
+  - wrk
+  - ykpers
+  - ykman
+  - yubico-piv-tool
+  - go-delve/delve/delve
+
+- cask:
+  - 1Password
+  - gpg-suite
+  - keybase
+  - slack
+  - visual-studio-code
+  - yubico-authenticator
+  - yubico-yubikey-manager
+  - yubico-yubikey-personalization-gui
+  - yubico-yubikey-piv-manager
+
 - go:
   - 
     package: github.com/svent/sift
