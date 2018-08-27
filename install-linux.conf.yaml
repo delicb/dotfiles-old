@@ -62,3 +62,13 @@
      stdout: true
      stdin: true
 
+  - # get my busseness keys and trust them
+    command: gpg --recv-keys F4D95D71B5B0C2C4125370521F0B33B41DA5214F && echo "F4D95D71B5B0C2C4125370521F0B33B41DA5214F:6:" | gpg --import-ownertrust
+    description: Fetch busseness key
+    stdout: true
+    stderr: true
+  - # get perosnal keys and trust them
+    command: gpg --recv-keys ED6C512DB61FB0515CC95B1F60CD93ACD1FDF8AF && echo "ED6C512DB61FB0515CC95B1F60CD93ACD1FDF8AF:6:" | gpg --import-ownertrust
+    description: Fetch personal key
+    stdout: true
+    stderr: true
