@@ -26,3 +26,7 @@ alias nb='jupyter notebook'
 alias godeps="go list -f '{{join .Deps \"\n\"}}' |  xargs go list -f '{{if not .Standard}}{{.ImportPath}}{{end}}'"
 
 alias clear_dns="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+
+alias cp="cp -i"
+alias rm="rm -I"
+
