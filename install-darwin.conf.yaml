@@ -78,8 +78,11 @@
 
 - cask:
   - 1Password
+  - deezer
+  - docker
   - gpg-suite
   - keybase
+  - tunnelblick
   - slack
   - visual-studio-code
   - yubico-authenticator
