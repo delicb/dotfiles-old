@@ -30,3 +30,4 @@ alias clear_dns="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder
 alias cp="cp -i"
 alias rm="rm -i"
 
+alias pp="$GOPATH/bin/pp"
