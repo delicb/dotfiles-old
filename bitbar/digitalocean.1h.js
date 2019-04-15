@@ -18,7 +18,7 @@ var hostname = 'api.digitalocean.com';
 
 // Add your Digital Ocean token.
 // If you have different DO teams you can add multiple tokens: ['DO_TOKEN_1', 'DO_TOKEN_2', ...]
-var DOTokens = ['187a689a7a980d0f4b5ef95c035df4bf098694dc4312d00eb0af85d1c706f82b'];
+var DOTokens = [''];
 
 var menuBarIcon = '💧';
 var startMenu = '---';
