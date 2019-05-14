@@ -108,3 +108,40 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
+
+# Dock settings
+
+# Set default icon sise
+defaults write com.apple.dock tilesize -int 50
+
+# Large size
+defaults write com.apple.dock largesize -float 90
+
+# Minimize effect
+defaults write com.apple.dock mineffect -string "genie"
+
+# Minimize windows into their application’s icon
+defaults write com.apple.dock minimize-to-application -bool true
+
+# Only single app
+defaults write com.apple.dock single-app -bool true
+
+# Disable Dashboard
+defaults write com.apple.dashboard mcx-disabled -bool true
+
+# Don’t show Dashboard as a Space
+defaults write com.apple.dock dashboard-in-overlay -bool true
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+# Don’t automatically rearrange Spaces based on most recent use
+defaults write com.apple.dock mru-spaces -bool false
+
+killall Dock
+
+# Fix scroll
+# Disable “natural” (Lion-style) scrolling
+# This disables both horizontal and vertical "natural" scoll. 
+# In order to keep vertical, I use https://pilotmoon.com/scrollreverser/
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
