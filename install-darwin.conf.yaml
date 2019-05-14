@@ -44,11 +44,17 @@
   - homebrew/core
   - homebrew/services
   - homebrew/bundle
+  - homebrew/cask-fonts
+
+# Java is needed for maven installation below
+- cask:
+    - java
 
 - brew:
   - cookiecutter
   - coreutils
-  - curl --with-nghttp2
+  - curl
+  - direnv
   - exa
   - git
   - git-extras
@@ -74,14 +80,14 @@
   - ykpers
   - ykman
   - yubico-piv-tool
-  - go-delve/delve/delve
 
 - cask:
   - 1Password
+  - alfred
+  - bettertouchtool
   - deezer
   - docker
   - gpg-suite
-  - keybase
   - tunnelblick
   - slack
   - visual-studio-code
@@ -89,6 +95,11 @@
   - yubico-yubikey-manager
   - yubico-yubikey-personalization-gui
   - yubico-yubikey-piv-manager
+  - scroll-reverser
+  - font-source-code-pro
+  - font-inconsolata
+  - font-hasklig
+  - font-input
 
 - go:
   - 
