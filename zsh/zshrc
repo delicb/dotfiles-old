@@ -93,7 +93,7 @@ setopt CORRECT
 
 setopt NO_BEEP
 
-eval "$(pyenv init -)"
+eval "$(pyenv init - --no-rehash)"
 
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
