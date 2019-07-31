@@ -1,6 +1,7 @@
 alias ls='exa'
 alias l='exa -lb --git --color-scale'
 alias la='l -a'
+tree() { exa --tree --level=${1:-2} }
 
 alias ..='cd ..'
 alias -g ...='cd ../..'
