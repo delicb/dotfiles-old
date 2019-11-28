@@ -3,7 +3,7 @@
 	{ "key": "cmd+shift+]", "command": "workbench.action.nextEditor"},
 	{ "key": "cmd+shift+[", "command": "workbench.action.previousEditor"}
 ,{
-	"key": "cmd+[",
+	"key": "cmd+[BracketLeft]",
 	"command": "workbench.action.navigateBack",
 	"when": "editorTextFocus"
 },{
