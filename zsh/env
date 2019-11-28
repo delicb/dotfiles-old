@@ -7,6 +7,7 @@ export PATH="$HOME/.pyenv/bin:/usr/local/bin:$PATH"
 # not required since go 1.9, since it is default, but keep it anyway
 export GOPATH="$HOME/go"
 export GOROOT="$(go env GOROOT)"
+export GOPRIVATE=*.sbgenomics.com
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -f /usr/libexec/java_home ]] && export JAVA_HOME=$(/usr/libexec/java_home)
