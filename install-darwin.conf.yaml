@@ -58,6 +58,7 @@
   - exa
   - git
   - git-extras
+  - git-delta
   - gnutls
   - go
   - graphviz
