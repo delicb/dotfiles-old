@@ -18,7 +18,7 @@ var hostname = 'api.digitalocean.com';
 
 // Add your Digital Ocean token.
 // If you have different DO teams you can add multiple tokens: ['DO_TOKEN_1', 'DO_TOKEN_2', ...]
-var DOTokens = [''];
+var DOTokens = ['f056bf2d2a513f1a898d5cee0748b77dedf605b436ec39b4fa05519da0837c07'];
 
 var menuBarIcon = '💧';
 var startMenu = '---';
@@ -48,7 +48,7 @@ function getDroplets() {
                 status = 'iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAAXVBMVEUAAAAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmAnrmCynqnaAAAAHnRSTlMAAwYHCQoQEh0fNVBRX2N5fJG+wMfK3O3v8fP3+/37J2BkAAAATklEQVQIHQXBhQHCAADAsA53d1j+P5OkqoaqqmbHr/G8rGr1BuOmmjwB47L2AM51A/CrFwBDFwDf2gI41fAAfObV4gFe66qG3fV9P0yrPxEfCr3MVhkLAAAAAElFTkSuQmCC';
             }
 
-            printBitBarLine(droplets[i].name, ['color=black', 'image=' + status]);
+            printBitBarLine(droplets[i].name, ['color=white', 'image=' + status]);
 
             // Open in browser and console
             printBitBarLine('--Open in browser', ['href=https://cloud.digitalocean.com/droplets/' + droplets[i].id]);
@@ -57,25 +57,25 @@ function getDroplets() {
             // Droplet creation date and time
             printBitBarLine('-----');
             printBitBarLine('--Created');
-            printBitBarLine('--' + humanDate, ['color=black']);
+            printBitBarLine('--' + humanDate, ['color=white']);
 
             // Droplet IPv4 address
             printBitBarLine('-----');
             printBitBarLine('--IP Address');
-            printBitBarLine('--' + droplets[i].networks.v4[0].ip_address, ['color=black']);
+            printBitBarLine('--' + droplets[i].networks.v4[0].ip_address, ['color=white']);
 
             // Droplet region
             printBitBarLine('-----');
             printBitBarLine('--Region');
-            printBitBarLine('--' + droplets[i].region.name, ['color=black']);
+            printBitBarLine('--' + droplets[i].region.name, ['color=white']);
 
             // Droplet details - image, memory, storage, vcpus
             printBitBarLine('-----');
             printBitBarLine('--Details');
-            printBitBarLine('--Image: ' + droplets[i].image.distribution + droplets[i].image.name, ['color=black']);
-            printBitBarLine('--Memory: ' + droplets[i].memory + 'MB', ['color=black']);
-            printBitBarLine('--Storage: ' + droplets[i].disk + 'GB', ['color=black']);
-            printBitBarLine('--CPUs: ' + droplets[i].vcpus, ['color=black']);
+            printBitBarLine('--Image: ' + droplets[i].image.distribution + droplets[i].image.name, ['color=white']);
+            printBitBarLine('--Memory: ' + droplets[i].memory + 'MB', ['color=white']);
+            printBitBarLine('--Storage: ' + droplets[i].disk + 'GB', ['color=white']);
+            printBitBarLine('--CPUs: ' + droplets[i].vcpus, ['color=white']);
         }
     });
 }
