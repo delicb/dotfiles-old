@@ -4,6 +4,7 @@
     #editor = code --wait
     editor = vim
     excludesfile = /Users/del-boy/.gitignore_global
+    pager = "delta --dark"
 [push]
     default = simple
 	followTags = true
