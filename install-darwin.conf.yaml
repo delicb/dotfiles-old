@@ -46,10 +46,6 @@
   - homebrew/bundle
   - homebrew/cask-fonts
 
-# Java is needed for maven installation below
-- cask:
-    - java
-
 - brew:
   - cookiecutter
   - coreutils
@@ -66,6 +62,7 @@
   - jq
   - maven
   - mercurial
+  - openjdk
   - pinentry-mac
   - pyenv
   - restic
@@ -89,7 +86,6 @@
   - deezer
   - docker
   - gpg-suite
-  - tunnelblick
   - slack
   - visual-studio-code
   - yubico-authenticator
@@ -125,6 +121,13 @@
   - 
     command: vim +PlugUpdate +qall
     description: Update vim plugins
+    stdout: true
+    stdin: true
+
+  # Link openjdk appropriate location
+  -
+    command: sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+    description: Linking OpenJDK to system location
     stdout: true
     stdin: true
 
