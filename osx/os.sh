@@ -123,9 +123,6 @@ defaults write com.apple.dock mineffect -string "genie"
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
 
-# Only single app
-defaults write com.apple.dock single-app -bool true
-
 # Disable Dashboard
 defaults write com.apple.dashboard mcx-disabled -bool true
 
@@ -145,3 +142,4 @@ killall Dock
 # This disables both horizontal and vertical "natural" scoll. 
 # In order to keep vertical, I use https://pilotmoon.com/scrollreverser/
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+
