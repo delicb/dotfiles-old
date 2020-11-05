@@ -123,6 +123,9 @@ defaults write com.apple.dock mineffect -string "genie"
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
 
+# Set dock to the left
+defaults write com.apple.dock orientation left
+
 # Disable Dashboard
 defaults write com.apple.dashboard mcx-disabled -bool true
 
