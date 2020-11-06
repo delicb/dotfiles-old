@@ -47,6 +47,7 @@
   - homebrew/cask-fonts
 
 - brew:
+  - bat
   - cookiecutter
   - coreutils
   - curl
