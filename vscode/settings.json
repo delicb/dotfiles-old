@@ -46,14 +46,14 @@
 		"medium"
 	],
 	"python.linting.pylintEnabled": true,
-	"python.linting.pep8Enabled": true,
-	"python.linting.pep8Args": ["--ignore", "E402", "--max-line-length", "120"],
+	"python.linting.pycodestyleEnabled": true,
+	"python.linting.pycodestyleArgs": ["--ignore", "E402", "--max-line-length", "120"],
 	"python.linting.prospectorPath": "/Users/del-boy/.pyenv/shims/prospector",
 	"python.formatting.provider": "yapf",
 	"python.formatting.yapfArgs": ["--style", "pep8", "-p"],
 	"python.formatting.autopep8Args": ["--aggressive"],
 
-	"python.unitTest.pyTestEnabled": true,
+	"python.testing.pytestEnabled": true,
 
 	"[python]":{
 		"editor.insertSpaces": true,
@@ -65,7 +65,7 @@
 
 
 	// golang settings
-	"go.useLanguageServer": false,
+	"go.useLanguageServer": true,
 	"go.formatTool": "goimports",
 	"go.formatFlags": [],
 	"go.liveErrors": {
@@ -119,6 +119,7 @@
 		"dbname",
 		"delic",
 		"delicb",
+		"devpi",
 		"dupaso",
 		"fixso",
 		"gitlens",
@@ -165,5 +166,7 @@
 	"vsicons.projectDetection.disableDetect": true,
 	"gitlens.settings.mode": "advanced",
 	"gitlens.codeLens.enabled": false,
-	"breadcrumbs.enabled": true
+	"breadcrumbs.enabled": true,
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
