@@ -49,19 +49,21 @@
 	"python.linting.pycodestyleEnabled": true,
 	"python.linting.pycodestyleArgs": ["--ignore", "E402", "--max-line-length", "120"],
 	"python.linting.prospectorPath": "/Users/del-boy/.pyenv/shims/prospector",
-	"python.formatting.provider": "yapf",
-	"python.formatting.yapfArgs": ["--style", "pep8", "-p"],
-	"python.formatting.autopep8Args": ["--aggressive"],
-
+	"python.formatting.provider": "black",
+	"python.formatting.blackArgs": [
+		"-l 120"
+	],
 	"python.testing.pytestEnabled": true,
 
 	"[python]":{
 		"editor.insertSpaces": true,
 		"editor.rulers": [
-			80
+			120
 		],
 		"files.trimTrailingWhitespace": true
 	},
+	"python.languageServer": "Pylance",
+	// "python.languageServer": "Microsoft",
 
 
 	// golang settings
@@ -86,7 +88,7 @@
 		"testCoverage": false
 	},
 	
-	"go.lintTool": "megacheck",
+	"go.lintTool": "golangci-lint",
 	"go.testOnSave": true,
 	"go.coverOnSave": true,
 	"go.coverageDecorator": {
@@ -103,7 +105,6 @@
 	},
 	"[go]": {
 		"editor.rulers": [
-			80,
 			120
 		],
 		"editor.formatOnSave": true,
