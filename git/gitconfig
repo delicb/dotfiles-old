@@ -5,6 +5,7 @@
     editor = vim
     excludesfile = /Users/del-boy/.gitignore_global
     pager = "delta --dark"
+	ignorecase = true
 [push]
     default = simple
 	followTags = true
