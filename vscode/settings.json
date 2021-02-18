@@ -151,8 +151,6 @@
 	"telemetry.enableCrashReporter": false,
 	"rest-client.enableTelemetry": false,
 	"code-runner.enableAppInsights": false,
-	"gitlens.advanced.telemetry.enabled": false,
-	"gitlens.gitExplorer.files.layout": "tree",
 	"gitlens.keymap": "chorded",
 	"gitlens.advanced.messages": {
 		"suppressCommitHasNoPreviousCommitWarning": false,
@@ -161,11 +159,7 @@
 		"suppressGitVersionWarning": false,
 		"suppressLineUncommittedWarning": false,
 		"suppressNoRepositoryWarning": false,
-		"suppressResultsExplorerNotice": false,
-		"suppressShowKeyBindingsNotice": true
 	},
-	"vsicons.projectDetection.disableDetect": true,
-	"gitlens.settings.mode": "advanced",
 	"gitlens.codeLens.enabled": false,
 	"breadcrumbs.enabled": true,
 	"editor.suggestSelection": "first",
