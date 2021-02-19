@@ -7,6 +7,7 @@
 [submodule "zsh/plugins/pure"]
 	path = zsh/plugins/pure
 	url = https://github.com/sindresorhus/pure.git
+    branch = main
 [submodule "dotbot-golang"]
 	path = dotbot-golang
 	url = https://github.com/delicb/dotbot-golang
