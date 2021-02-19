@@ -1,7 +1,10 @@
 bindkey -e
 
+# initialize asdf
+source $HOME/.asdf/asdf.sh
+
 # add own functions dir to fpath
-fpath=( "$HOME/.zsh/functions" $fpath )
+fpath=( "$HOME/.zsh/functions" "$ASDF_DIR/completions" $fpath )
 
 # enable tab completion
 autoload -Uz compinit && compinit
@@ -104,3 +107,4 @@ if [ -f ~/.private.zshrc ]; then
 fi
 
 eval "$(direnv hook zsh)"
+

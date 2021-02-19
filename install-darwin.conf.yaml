@@ -46,6 +46,12 @@
       method: clone-or-pull
       description: "asdf - programming tools version manager"
 
+- asdf:
+  - plugin: python
+    global: latest
+  - plugin: golang
+    global: latest
+
 - tap:
   - homebrew/cask
   - homebrew/cask-drivers
@@ -65,7 +71,6 @@
   - git-extras
   - git-delta
   - gnutls
-  - go
   - graphviz
   - htop
   - jq
