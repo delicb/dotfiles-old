@@ -38,6 +38,14 @@
     ~/bin/git-personal: bin/git-personal
     ~/bin/git-sbg: bin/git-sbg
 
+# install asdf
+- git:
+    '~/.asdf':
+      url: https://github.com/asdf-vm/asdf.git
+      branch: master
+      method: clone-or-pull
+      description: "asdf - programming tools version manager"
+
 - tap:
   - homebrew/cask
   - homebrew/cask-drivers

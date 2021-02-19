@@ -26,4 +26,4 @@ fi
 cd "${BASEDIR}"
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" --plugin-dir=dotbot-golang --plugin-dir=dotbot-brew "${@}"
+"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" --plugin-dir=dotbot-golang --plugin-dir=dotbot-brew --plugin-dir=dotbot-git "${@}"
