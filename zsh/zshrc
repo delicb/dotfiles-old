@@ -96,8 +96,6 @@ setopt CORRECT
 
 setopt NO_BEEP
 
-eval "$(pyenv init - --no-rehash)"
-
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
