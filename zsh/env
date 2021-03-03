@@ -9,8 +9,8 @@ export GOPATH="$HOME/go"
 export GOROOT="$(go env GOROOT)"
 export GOPRIVATE=*.sbgenomics.com
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -f /usr/libexec/java_home ]] && export JAVA_HOME=$(/usr/libexec/java_home)
+#export PYENV_ROOT="$HOME/.pyenv"
+#[[ -f /usr/libexec/java_home ]] && export JAVA_HOME=$(/usr/libexec/java_home)
 
 export PATH="$HOME/bin:$GOPATH/bin:$PATH:$HOME/.cargo/bin"
 
