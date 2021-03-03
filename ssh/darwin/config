@@ -1,6 +1,7 @@
 Host delic.rs
   Port 22202
 Host home.delic.rs
+  User del-boy
   Port 22
 Host *
   ServerAliveInterval 240
