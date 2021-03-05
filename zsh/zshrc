@@ -1,5 +1,8 @@
 bindkey -e
 
+# set up homebrew environment
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # initialize asdf
 source $HOME/.asdf/asdf.sh
 
@@ -97,12 +100,14 @@ setopt CORRECT
 setopt NO_BEEP
 
 export GPG_TTY="$(tty)"
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+#export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
 
 if [ -f ~/.private.zshrc ]; then
     source ~/.private.zshrc
 fi
 
-eval "$(direnv hook zsh)"
+# dissable for now, not using it often and it takes some time from starting new instance of a shell
+#eval "$(direnv hook zsh)"
+
 
