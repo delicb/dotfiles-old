@@ -12,55 +12,14 @@ fpath=( "$HOME/.zsh/functions" "$ASDF_DIR/completions" $fpath )
 # enable tab completion
 autoload -Uz compinit && compinit
 
-#source ~/.zshenv
+# load own functions
+autoload -Uz extract using_port gfmt gcover venv
 
 # load all aliases
 source ~/.aliases
 
 # load setup for prompt
 source ~/.zsh/prompt.zsh
-
-func gfmt() {
-    echo Running gofmt
-    gofmt -l -s -w $(find . -type f -name '*.go' -not -path './vendor/*')
-    echo Running goimports
-    goimports -l -w $(find . -type f -name '*.go' -not -path './vendor*')
-}
-
-func cover () {
-    t="/tmp/go-cover.$$.tmp"
-    go test -coverprofile=$t $@ && go tool cover -html=$t && unlink $t
-}
-
-func using_port() {
-    lsof -n -i:$1 | grep LISTEN
-}
-
-venv() {
-    local venvs_root
-    venvs_root=~/venvs
-    if [[ -z $1 ]]; then
-        echo "Usage: venv <NAME>"
-        return 1
-    fi
-    if [[ $1 == "off" ]]; then
-        echo "param if off"
-        deactivate
-        return 0
-    fi
-
-    if [[ -d $venvs_root/$1 ]]; then
-
-        if [[ -f $venvs_root/$1/bin/activate ]]; then
-            VIRTUAL_ENV_DISABLE_PROMPT=1 source $venvs_root/$1/bin/activate
-        else
-            echo "Folder ~/venvs/$1 exists, but does not seem to be valid virtual environment"
-            return 2
-        fi
-    else
-        echo "Venv $1 does not exist. For now - create it manually."
-    fi
-}
 
 if [[ $(whoami) = root ]]; then
     umask 0022
@@ -109,5 +68,4 @@ fi
 
 # dissable for now, not using it often and it takes some time from starting new instance of a shell
 #eval "$(direnv hook zsh)"
-
 
