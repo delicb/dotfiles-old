@@ -54,7 +54,6 @@ export SAVEHIST=1000
 export HISTSIZE=10000
 
 setopt COMPLETE_IN_WORD
-setopt CORRECT
 
 setopt NO_BEEP
 
