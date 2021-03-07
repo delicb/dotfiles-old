@@ -19,7 +19,7 @@
 	
 	"workbench.activityBar.visible": true,
 	"workbench.sideBar.location": "left",
-	"workbench.iconTheme": "vs-nomo-dark",
+	"workbench.iconTheme": "vscode-icons",
 	"workbench.statusBar.visible": true,
 
 	"files.autoSave": "off",
