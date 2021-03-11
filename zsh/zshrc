@@ -1,7 +1,8 @@
 bindkey -e
 
 # set up homebrew environment
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# this path is only for Apple Silicon, so check if it exists
+[[ -f /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # initialize asdf
 source $HOME/.asdf/asdf.sh
