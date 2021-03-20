@@ -21,7 +21,7 @@ alias gss='git s'
 
 alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
 
-alias reload='source ~/.zshrc'
+alias reload='exec ${SHELL} -l'
 alias nb='jupyter notebook'
 
 alias godeps="go list -f '{{join .Deps \"\n\"}}' |  xargs go list -f '{{if not .Standard}}{{.ImportPath}}{{end}}'"
