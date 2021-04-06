@@ -65,6 +65,5 @@ if [ -f ~/.private.zshrc ]; then
     source ~/.private.zshrc
 fi
 
-# dissable for now, not using it often and it takes some time from starting new instance of a shell
 eval "$(direnv hook zsh)"
 
