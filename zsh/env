@@ -3,15 +3,6 @@ export PAGER='less'
 
 
 export PATH="$HOME/.asdf/shims:/usr/local/bin:/usr/local/sbin:$PATH"
-
-# not required since go 1.9, since it is default, but keep it anyway
-export GOPATH="$HOME/go"
-export GOROOT="$(go env GOROOT)"
-export GOPRIVATE=*.sbgenomics.com
-
-#export PYENV_ROOT="$HOME/.pyenv"
-#[[ -f /usr/libexec/java_home ]] && export JAVA_HOME=$(/usr/libexec/java_home)
-
 export PATH="$HOME/bin:$GOPATH/bin:$PATH:$HOME/.cargo/bin"
 
 if [[ "$OSTYPE" == darwin* ]]; then
@@ -24,6 +15,8 @@ export LC_ALL='en_US.UTF-8'
 # disable Homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1
 
+# disable AWS SAM telemetry
 export SAM_CLI_TELEMETRY=0
 
+# load any private environment variables that should not be committed
 [[ -f ~/.zshenvprivate ]] && source ~/.zshenvprivate
