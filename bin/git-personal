@@ -2,5 +2,3 @@
 
 git config user.email 'bojan@delic.rs'
 git config user.name 'Bojan Delić'
-git config user.signingkey 0xA6955C371800A044
-git config commit.gpgsign true
