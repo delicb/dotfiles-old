@@ -30,7 +30,7 @@
 	// terminal rules
 	"terminal.external.osxExec": "iterm.app",
 	"terminal.integrated.fontFamily": "Input mono",
-	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.cursorStyle": "block",
 	"terminal.integrated.scrollback": 10000,
 
 
@@ -163,5 +163,12 @@
 	"gitlens.codeLens.enabled": false,
 	"breadcrumbs.enabled": true,
 	"editor.suggestSelection": "first",
-	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"workbench.editorAssociations": [
+		{
+			"viewType": "jupyter.notebook.ipynb",
+			"filenamePattern": "*.ipynb"
+		}
+	],
+	"workbench.colorTheme": "One Dark Pro"
 }
