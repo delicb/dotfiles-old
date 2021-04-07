@@ -9,6 +9,9 @@ if [[ "$OSTYPE" == darwin* ]]; then
     export BROWSER='open'
 fi
 
+# set GOPATH
+export GOPATH=$HOME/go
+
 export LANG='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'
 
