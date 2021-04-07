@@ -170,5 +170,6 @@
 			"filenamePattern": "*.ipynb"
 		}
 	],
-	"workbench.colorTheme": "One Dark Pro"
+	"workbench.colorTheme": "One Dark Pro",
+	"workbench.productIconTheme": "material-product-icons"
 }
