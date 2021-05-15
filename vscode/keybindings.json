@@ -60,8 +60,17 @@
 	"when": "terminalFocus && terminalProcessSupported"
 },
 {
+	"key": "alt+tab",
+	"command": "workbench.action.terminal.focusNextPane",
+	"when": "terminalFocus && terminalProcessSupported"
+},
+{
 	"key": "alt+cmd+down",
 	"command": "-workbench.action.terminal.focusNextPane",
 	"when": "terminalFocus && terminalProcessSupported"
+},
+{
+	"key": "alt+tab",
+	"command": "workbench.action.focusNextGroup"
 }
 ]

@@ -2,7 +2,8 @@
 {
 	// global editor settings
 	// "editor.fontFamily": "Input mono",
-	"editor.fontFamily": "Source Code Pro",
+	"editor.fontFamily": "JetBrains Mono",
+	// "editor.fontFamily": "Source Code Pro",
 	"editor.fontSize": 13,
 	"editor.fontLigatures": true,
 	"editor.lineHeight": 18,
@@ -160,7 +161,6 @@
 		"suppressLineUncommittedWarning": false,
 		"suppressNoRepositoryWarning": false,
 	},
-	"gitlens.codeLens.enabled": false,
 	"breadcrumbs.enabled": true,
 	"editor.suggestSelection": "first",
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -171,5 +171,10 @@
 		}
 	],
 	"workbench.colorTheme": "One Dark Pro",
-	"workbench.productIconTheme": "material-product-icons"
+	"workbench.productIconTheme": "material-product-icons",
+	"gitlens.codeLens.enabled": false,
+	"gitlens.statusBar.enabled": false,
+	"go.toolsManagement.autoUpdate": true,
+	"terminal.integrated.tabs.enabled": true,
+	"terminal.integrated.tabs.location": "left"
 }
