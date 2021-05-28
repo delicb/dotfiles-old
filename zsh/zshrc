@@ -66,4 +66,5 @@ if [ -f ~/.private.zshrc ]; then
 fi
 
 eval "$(direnv hook zsh)"
-
+# kubectl autocomplete
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
