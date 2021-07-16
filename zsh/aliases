@@ -32,3 +32,5 @@ alias cp="cp -i"
 alias rm="rm -i"
 
 alias pp="$GOPATH/bin/pp"
+
+alias k=kubectl
