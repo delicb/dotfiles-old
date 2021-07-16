@@ -23,9 +23,16 @@
     file-style = bold yellow ul
     file-decoration-style = none
 
+[diff]
+    colorMoved = default
+
 [push]
     default = simple
 	followTags = true
+
+[pull]
+	rebase = false
+
 [alias]
     tree = log --graph --decorate --pretty=oneline --abbrev-commit
     s= status --short --branch --ignore-submodules=untracked
@@ -42,13 +49,9 @@
     dc = diff --cached
     unstage = reset HEAD --
     change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f "
-[diff]
-    tool = default-difftool
-[difftool "default-difftool"]
-    cmd = code --wait --diff $LOCAL $REMOTE
-[pull]
-	rebase = false
+
 [init]
 	defaultBranch = main
+
 [url "ssh://git@github.com/"]
     insteadOf = https://github.com/
