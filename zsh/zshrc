@@ -14,7 +14,7 @@ fpath=( "$HOME/.zsh/functions" "$ASDF_DIR/completions" $fpath )
 autoload -Uz compinit && compinit
 
 # load own functions
-autoload -Uz extract using_port gfmt gcover venv
+autoload -Uz extract using_port gfmt gcover venv pip_login ecr_login
 
 # load all aliases
 source ~/.aliases
@@ -67,3 +67,5 @@ fi
 
 eval "$(direnv hook zsh)"
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
